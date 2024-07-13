@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "priority": 1,
+    "action": {
+      "type": "redirect",
+      "redirect": {
+        "extensionPath": "/redirect.html"
+      }
+    },
+    "condition": {
+      "urlFilter": "||dailymail.co.uk",
+      "resourceTypes": ["main_frame"]
+    }
+  }
+]
