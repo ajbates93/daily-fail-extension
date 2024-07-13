@@ -3,14 +3,9 @@
   "name": "Daily Mail Redirector",
   "version": "1.0.0",
   "description": "Redirects Daily Mail links to alternative sources",
-  "permissions": [
-    "webRequest",
-    "webRequestBlocking",
-    "http://www.dailymail.co.uk/*",
-    "<all_urls>"
-  ],
+  "permissions": ["webRequest", "declarativeNetRequestWithHostAccess"],
+  "host_permissions": ["https://www.dailymail.co.uk/*"],
   "background": {
-    "scripts": ["background.ts"],
-    "persistent": true
+    "service_worker": "dist/background.js"
   }
 }
